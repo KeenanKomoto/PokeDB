@@ -52,7 +52,9 @@ def parse(SQLstatement):
     elif 'insert' in statement:
         operation = insert_sql(statement)
     return operation
-
+print(inputRead)
+print(inputWrite)
+print(inputCondition)
 print("read input: ", parse(inputRead))
 print("write input: ", parse(inputWrite))
 print("condition input: ", parse(inputCondition))
